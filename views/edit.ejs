@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit account</title>
+    <link rel="stylesheet" href="/instagramStyle.css">
+</head>
+<body>
+    <h3>Hiie, <%= page.username %></h3>
+    <br>
+    <div class="content">
+        <h4 id="id">ID: <%= page.id %></h4>
+        <h4 id="user">Username: @<%= page.username %></h4> 
+
+    <form method="post" action="/instagram/<%= page.id %>?_method=PATCH">
+        <label for="bio">Bio: </label>
+        <textarea id="bio" rows="5" name="bio">  <%= page.bio %>
+        </textarea>
+        <br>
+        <textarea name="post"> <%=page.post%>
+        </textarea>
+        <br>
+        <button>Done✅</button>
+    </form>
+</div>
+</body>
+</html>

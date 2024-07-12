@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram template</title>
+    <link rel="stylesheet" href="/instagramStyle.css">
+</head>
+<body>
+    <h3 id="a">INSTAGRAM API&heartsuit;</h3>
+    <br>
+    <% for ( let page of pages) {%>
+        <div class="content">
+        <h4 id="id">ID: <%= page.id %></h4>
+        <h4 id="user">Username: @<%= page.username %></h4> 
+        <h4 id="bio">About: <%= page.bio %></h4>
+        <img src="<%= page.post %>" alt="IMAGE"> 
+    </div>  
+    <a href="http://localhost:8080/instagram/<%= page.id %>"><button>View</button></a> &nbsp;&nbsp;&nbsp;
+    <a href="http://localhost:8080/instagram/<%= page.id %>/edit"><button>Edit</button></a>   
+     
+    <form method="post" action="/instagram/<%= page.id %>?_method=DELETE" >
+        &nbsp;&nbsp;&nbsp;<button>Delete Account</button>
+    </form>
+    <% } %>
+    <br><br>
+    <a href="http://localhost:8080/instagram/new"><button>Create New Post</button></a> 
+    
+</body>
+</html>

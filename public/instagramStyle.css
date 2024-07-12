@@ -1,0 +1,36 @@
+.h3 {
+    font-style: italic;
+}
+
+.new {
+    align-content:center;
+    font-size: larger;
+    font-family:fantasy;
+}
+/* * {
+    background-color: ivory;
+    background-image: -moz-linear-gradient();
+} */
+
+.content {
+    background-color: lavender;
+}
+#a {
+    text-align:center;
+}
+
+img {
+    width: 300px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    border-radius: 10px; /* Rounded corners */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+/* Hover effect to scale up the image slightly */
+img:hover {
+    transform: scale(1.05);
+}
+
+button:hover {
+    transform: scale(1.05);
+}

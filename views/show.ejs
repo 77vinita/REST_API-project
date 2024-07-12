@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Individual Post</title>
+    <link rel="stylesheet" href="/instagramStyle.css">
+</head>
+<body>
+    <h3>Hiie, <%= page.username %></h3>
+    <br>
+    <div class="content">
+        <h4 id="id">ID: <%= page.id %></h4>
+        <h4 id="user">Username: @<%= page.username %></h4> 
+        <h4 id="bio">About: <%= page.bio %></h4>
+        <img src="<%= page.post %>" alt="IMAGE"> 
+    </div>
+</body>
+</html>
